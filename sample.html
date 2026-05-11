@@ -11,7 +11,7 @@
             align-items: center;
             height: 100vh;
             margin: 0;
-            background-color: #f2f2f2;
+            background-color: #f7f7f7;
         }
 
         #myform{
@@ -19,7 +19,6 @@
             padding: 30px;
             border-radius: 10px;
             background-color: white;
-            box-shadow: 0 0 10px rgba(0,0,0,0.2);
         }
 
         input{
@@ -31,8 +30,7 @@
             width: 105%;
             background-color: blue;
             color: white;
-            border: none;
-            cursor: pointer;
+            
         }
 
     </style>
@@ -42,7 +40,7 @@
 
     <div id="myform">
 
-        <form>
+        <form onsubmit = "return validateform()" name="form">
 
             <h1>Form</h1>
 
@@ -55,7 +53,6 @@
             <input type="email" name="email" placeholder="Enter Your Email"><br>
 
             <br>
-
             <label>Password</label><br>
             <input type="password" name="password" placeholder="Enter Your Password"><br>
 
@@ -66,6 +63,26 @@
         </form>
 
     </div>
+	
+	<script>
+		function validateform(){
+			let name = document.forms['form']['name'].value;
+			let email = document.forms['form']['email'].value;
+			let password = document.forms['form']['password'].value;
+			
+			if(name == ""){
+				alert("Enter your name");
+			}
+			
+			if(!email.includes('@')){
+				alert("Enter valide email");
+			}
+			
+			if(password.length < 6){
+				alert("Enter minimum 6 character password");
+			}
+		}
+	</script>
 
 </body>
 </html>
