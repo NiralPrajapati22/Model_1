@@ -47,17 +47,17 @@
             <h1>Form</h1>
 
             <label>Name</label><br>
-            <input type="text" name="name" placeholder="Enter Your Name"><br>
+            <input type="text" name="name"><br>
 
             <br>
 
             <label>Email</label><br>
-            <input type="email" name="email" placeholder="Enter Your Email"><br>
+            <input type="email" name="email"><br>
 
             <br>
 
             <label>Password</label><br>
-            <input type="password" name="password" placeholder="Enter Your Password"><br>
+            <input type="password" name="password"><br>
 
             <br><br>
 
