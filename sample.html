@@ -1,60 +1,135 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>First file</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Form</title>
 
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
 
-        body{
+        body {
+            background-color: #f2f2f2;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f7f7f7;
+            min-height: 100vh;
         }
 
-        #myform{
-            border: 2px solid black;
-            padding: 30px;
-            border-radius: 10px;
+        .container {
+            width: 400px;
             background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px gray;
         }
 
-        input{
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: black;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input,
+        textarea,
+        select {
             width: 100%;
-            padding: 8px;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid gray;
+            border-radius: 5px;
         }
 
-        input[type="submit"]{
-            width: 105%;
+        input[type="radio"],
+        input[type="checkbox"] {
+            width: auto;
+            margin-right: 5px;
+        }
+
+        input[type="color"] {
+            height: 45px;
+            padding: 2px;
+        }
+
+        input[type="submit"] {
             background-color: blue;
             color: white;
-            
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
         }
 
+        input[type="submit"]:hover {
+            background-color: darkblue;
+        }
     </style>
 </head>
 
 <body>
 
-    <div id="myform">
+    <div class="container">
 
-        <form onsubmit = "return validateform()" name="form">
+        <form name="myform" onsubmit="return validateForm()">
 
-            <h1>Form</h1>
+            <h1>Registration Form</h1>
 
-            <label>Name</label><br>
-            <input type="text" name="name" placeholder="Enter Your Name"><br>
+            <label>Full Name</label>
+            <input type="text" name="name" placeholder="Enter your name">
 
-            <br>
+            <label>Email</label>
+            <input type="email" name="email" placeholder="Enter your email">
 
-            <label>Email</label><br>
-            <input type="email" name="email" placeholder="Enter Your Email"><br>
+            <label>Password</label>
+            <input type="password" name="password" placeholder="Enter password">
 
-            <br>
-            <label>Password</label><br>
-            <input type="password" name="password" placeholder="Enter Your Password"><br>
+            <label>Phone Number</label>
+            <input type="tel" name="phone" placeholder="Enter phone number">
+
+            <label>Address</label>
+            <textarea name="address" rows="4" placeholder="Enter your address"></textarea>
+
+            <label>Upload File</label>
+            <input type="file" name="file">
+
+            <label>Favorite Color</label>
+            <input type="color" name="color">
+
+            <label>Date of Birth</label>
+            <input type="date" name="date">
+
+            <label>Time</label>
+            <input type="time" name="time">
+
+            <label>Select Subject</label>
+            <select name="subject">
+                <option value="DBMS">DBMS</option>
+                <option value="Cloud">Cloud</option>
+                <option value="Python">Python</option>
+                <option value="AI/ML">AI/ML</option>
+            </select>
+
+            <label>Gender</label><br>
+            <input type="radio" name="gender" value="Male"> Male
+            <input type="radio" name="gender" value="Female"> Female
+            <input type="radio" name="gender" value="Other"> Other
+
+            <br><br>
+
+            <label>Skills</label><br>
+            <input type="checkbox" name="skill"> HTML
+            <input type="checkbox" name="skill"> CSS
+            <input type="checkbox" name="skill"> JavaScript
 
             <br><br>
 
@@ -63,26 +138,36 @@
         </form>
 
     </div>
-	
-	<script>
-		function validateform(){
-			let name = document.forms['form']['name'].value;
-			let email = document.forms['form']['email'].value;
-			let password = document.forms['form']['password'].value;
-			
-			if(name == ""){
-				alert("Enter your name");
-			}
-			
-			if(!email.includes('@')){
-				alert("Enter valide email");
-			}
-			
-			if(password.length < 6){
-				alert("Enter minimum 6 character password");
-			}
-		}
-	</script>
+
+    <script>
+
+        function validateForm() {
+
+            let name = document.forms["myform"]["name"].value;
+            let email = document.forms["myform"]["email"].value;
+            let password = document.forms["myform"]["password"].value;
+
+            if (name == "") {
+                alert("Please enter your name");
+                return false;
+            }
+
+            if (!email.includes("@")) {
+                alert("Please enter valid email");
+                return false;
+            }
+
+            if (password.length < 6) {
+                alert("Password must be at least 6 characters");
+                return false;
+            }
+
+            alert("Form Submitted Successfully");
+            return true;
+        }
+
+    </script>
 
 </body>
+
 </html>
