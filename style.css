@@ -13,7 +13,7 @@ header{
     background-color: #c1e3df;
     color: black;
     padding: 20px;
-    text-align: center;
+    text-align: end;
 }
 
 h1{
@@ -24,6 +24,7 @@ nav a{
     color: blue;
     margin: 0 10px;
     text-decoration: none;
+    background-color: white;
 }
 
 nav a:hover{
@@ -52,10 +53,20 @@ aside{
     text-align: center;
 }
 
+.contact-box{
+    background-color: white;
+    width: 300px;
+    margin: 30px auto; 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
 footer{
     background-color: #c1e3df;
     color: black;
     text-align: center;
     padding: 15px;
-    margin-top: 20px;
+    margin-top: 45px;
+
 }
