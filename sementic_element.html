@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic Elements Example</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+         header{
+            background-color: #c1e3df;
+            color: black;
+            padding: 20px;
+            text-align: center;
+        }
+        body{
+            background-color: #f4f4f4;
+            line-height: 1.6;
+        }
+
+        h1{
+            color:black;
+            margin-bottom: 10px;
+        }
+        nav a{
+            color: blue;
+            margin: 0 10px;
+        }
+        nav a:hover{
+            color: black;
+        }
+        main{
+            display: flex;
+            gap: 20px;
+            padding: 30px;
+        }
+        section,article,aside{
+            background-color: white;
+            padding: 15px;
+            border-radius: 8px;
+        }
+        section{
+            flex: 2;
+        }
+
+        article{
+            flex: 2;
+        }
+        
+        aside{
+            flex: 1;
+        }
+        footer{
+            background-color: #c1e3df;
+            color: black;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>My Website</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>About Us</h2>
+            <p>This is a section about our website.</p>
+        </section>
+
+        <article>
+            <h2>Latest Blog</h2>
+            <p>This is an article element example.</p>
+        </article>
+
+        <aside>
+            <h3>Related Links</h3>
+            <ul>
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">CSS</a></li>
+            </ul>
+        </aside>
+    </main>
+
+    <footer>
+        <p>© 2026 My Website</p>
+    </footer>
+
+</body>
+</html>
