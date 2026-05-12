@@ -85,35 +85,36 @@
             <h1>Registration Form</h1>
 
             <label>Full Name</label>
-            <input type="text" name="name" placeholder="Enter your name">
+            <input type="text" name="name" placeholder="Enter your name" required>
 
             <label>Email</label>
-            <input type="email" name="email" placeholder="Enter your email">
+            <input type="email" name="email" placeholder="Enter your email" required >
 
             <label>Password</label>
-            <input type="password" name="password" placeholder="Enter password">
+            <input type="password" name="password" placeholder="Enter password" 
+                required minlength="6" maxlength="12" pattern="(?=.*[A-Za-z])(?=.*[0-9]).{6,12}">
 
             <label>Phone Number</label>
-            <input type="tel" name="phone" placeholder="Enter phone number">
+            <input type="tel" name="phone" placeholder="Enter phone number" required required pattern="[0-9]{10}">
 
             <label>Address</label>
-            <textarea name="address" rows="4" placeholder="Enter your address"></textarea>
+            <textarea name="address" rows="4" placeholder="Enter your address" required required minlength="10"></textarea>
 
             <label>Upload File</label>
-            <input type="file" name="file">
+            <input type="file" name="file" accept=".jpg,.png,.pdf">
 
             <label>Favorite Color</label>
             <input type="color" name="color">
 
             <label>Date of Birth</label>
-            <input type="date" name="date">
+            <input type="date" name="date" required max="2026-12-31">
 
             <label>Time</label>
             <input type="time" name="time">
 
             <label>Select Subject</label>
             <select name="subject">
-                <option value="DBMS">DBMS</option>
+                <option value="DBMS" required>DBMS</option>
                 <option value="Cloud">Cloud</option>
                 <option value="Python">Python</option>
                 <option value="AI/ML">AI/ML</option>
@@ -127,7 +128,7 @@
             <br><br>
 
             <label>Skills</label><br>
-            <input type="checkbox" name="skill"> HTML
+            <input type="checkbox" name="skill" required> HTML
             <input type="checkbox" name="skill"> CSS
             <input type="checkbox" name="skill"> JavaScript
             <br><br>
@@ -142,35 +143,6 @@
         </form>
 
     </div>
-
-    <script>
-
-        function validateForm() {
-
-            let name = document.forms["myform"]["name"].value;
-            let email = document.forms["myform"]["email"].value;
-            let password = document.forms["myform"]["password"].value;
-
-            if (name == "") {
-                alert("Please enter your name");
-                return false;
-            }
-
-            if (!email.includes("@")) {
-                alert("Please enter valid email");
-                return false;
-            }
-
-            if (password.length < 6) {
-                alert("Password must be at least 6 characters");
-                return false;
-            }
-
-            alert("Form Submitted Successfully");
-            return true;
-        }
-
-    </script>
 
 </body>
 
