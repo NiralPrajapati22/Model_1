@@ -4,31 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css"> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <title>Index Page</title>
 </head>
 <body>
-    <main>
-        <header>
-            <nav>
-                <img src="logo.svg" class="logo" alt="Company Logo">
-                <a href="index.html">HOME</a>
-                <a href="categorie.html">Categories</a>
-                <a href="corporate_oreder.html">Corporate Orders</a>
-                <a href="contact_us.html">Contact Us</a>
-                <a href="about_us.html">About Us</a>
+    <div id="nav">
+    </div>
+    <div class="main">
+         <div class="slider">
+            <img src="img1.webp" class="slide active">
+            <img src="img2.webp" class="slide">
+            <img src="img3.webp" class="slide">
+        </div>
+    </div>
 
-                <div class="search-group">
-                    <div class="search-input-wrapper">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
-                        </svg>
-                        <input type="text" placeholder="Search..." name="search">
-                    </div>
-                </div>
-            </nav>
-        </header>
-    </main>
 
+
+
+
+
+
+
+
+
+
+    <div id="footer">
+
+    </div>
+    <script>
+        $(document).ready(function(){
+            $("#nav").load('nav.html')
+            $("#footer").load('footer.html')
+        })
+    </script>
+
+    
 
 </body>
 </html>
