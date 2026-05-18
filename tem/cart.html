@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopZone | Shopping Cart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+
+    <!-- Navbar -->
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="index.html">ShopZone</a></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="cart.html" style="color: #febd69;">Cart</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="container">
+        
+        <!-- Order Progress Bar -->
+        <div class="progress-container">
+            <div class="progress-step active"><span>1</span> Cart</div>
+            <div class="progress-line"></div>
+            <div class="progress-step"><span>2</span> Delivery</div>
+            <div class="progress-line"></div>
+            <div class="progress-step"><span>3</span> Payment</div>
+        </div>
+
+        <div class="cart-layout">
+            
+            <!-- Left Side: Cart Items List -->
+            <div class="cart-items-section">
+                <h2>Shopping Cart</h2>
+                <span class="price-header">Price</span>
+                <hr class="divider">
+
+                <!-- Item 1 -->
+                <div class="enhanced-cart-item">
+                    <div class="item-img-placeholder">Headphones</div>
+                    <div class="item-details">
+                        <h3 class="item-title"><a href="product.html">Premium Noise-Cancelling Wireless Headphones</a></h3>
+                        <p class="stock-status">In Stock</p>
+                        <p class="shipping-info">Eligible for FREE Shipping</p>
+                        
+                        <div class="item-actions">
+                            <div class="qty-selector">
+                                <label for="qty1">Qty:</label>
+                                <select id="qty1">
+                                    <option value="1" selected>1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                            </div>
+                            <span class="action-btn">Delete</span>
+                            <span class="action-btn">Save for later</span>
+                        </div>
+                    </div>
+                    <div class="item-price-box">
+                        <p class="price">$199.99</p>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="enhanced-cart-item">
+                    <div class="item-img-placeholder">Backpack</div>
+                    <div class="item-details">
+                        <h3 class="item-title"><a href="product.html">Waterproof Travel Laptop Backpack</a></h3>
+                        <p class="stock-status">In Stock</p>
+                        <p class="shipping-info">Eligible for FREE Shipping</p>
+                        
+                        <div class="item-actions">
+                            <div class="qty-selector">
+                                <label for="qty2">Qty:</label>
+                                <select id="qty2">
+                                    <option value="1" selected>1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                            </div>
+                            <span class="action-btn">Delete</span>
+                            <span class="action-btn">Save for later</span>
+                        </div>
+                    </div>
+                    <div class="item-price-box">
+                        <p class="price">$49.99</p>
+                    </div>
+                </div>
+
+                <div class="cart-subtotal-bottom">
+                    Subtotal (2 items): <span class="price">$249.98</span>
+                </div>
+            </div>
+            
+            <!-- Right Side: Checkout Summary Panel -->
+            <div class="checkout-sidebar">
+                <div class="free-shipping-alert">
+                    <span class="checkmark">✓</span> Your order qualifies for FREE Shipping. Choose this option at checkout.
+                </div>
+                
+                <div class="summary-row">
+                    <span>Subtotal (2 items):</span>
+                    <span class="price">$249.98</span>
+                </div>
+                
+                <div class="gift-checkbox">
+                    <input type="checkbox" id="is-gift">
+                    <label for="is-gift">This order contains a gift</label>
+                </div>
+
+                <button class="checkout-btn">Proceed to Checkout</button>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Top-Down Button -->
+    <a href="#top" class="scroll-top-btn">↑</a>
+
+    <footer>
+        <p>&copy; 2026 ShopZone. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

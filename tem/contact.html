@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopZone Customer Service | Help & Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+
+    <!-- Header Navigation Bar -->
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="index.html">ShopZone</a></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html" style="color: #febd69;">Contact Us</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Main Container Layout -->
+    <main class="container">
+        
+        <!-- Welcome Hub Banner -->
+        <section class="help-hub-banner">
+            <h1>Hello. What can we help you with today?</h1>
+            <p>Browse our self-service tools or submit an official ticket request directly below to our specialized customer care divisions.</p>
+        </section>
+
+        <!-- Dynamic Self-Service Card Shortcuts Grid -->
+        <section class="help-grid-shortcuts">
+            <div class="help-shortcut-card">
+                <div class="card-icon-box">📦</div>
+                <div class="card-content-box">
+                    <h3>Your Orders</h3>
+                    <p>Track packages, edit shipping paths, or initiate item returns.</p>
+                </div>
+            </div>
+            
+            <div class="help-shortcut-card">
+                <div class="card-icon-box">🔄</div>
+                <div class="card-content-box">
+                    <h3>Returns & Refunds</h3>
+                    <p>View return policies or print drop-off label slips.</p>
+                </div>
+            </div>
+
+            <div class="help-shortcut-card">
+                <div class="card-icon-box">💳</div>
+                <div class="card-content-box">
+                    <h3>Payment Settings</h3>
+                    <p>Update credit cards, review wallet balances, or change invoices.</p>
+                </div>
+            </div>
+
+            <div class="help-shortcut-card">
+                <div class="card-icon-box">👤</div>
+                <div class="card-content-box">
+                    <h3>Account Settings</h3>
+                    <p>Change login credentials, manage passwords, or edit profiles.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Two Column Interactive Contact Splitter -->
+        <div class="contact-split-layout">
+            
+            <!-- Left Panel: Official Case Submission Form Container -->
+            <div class="contact-form-card">
+                <h2>Create an Official Support Case</h2>
+                <p class="form-sub-header">Please fill out the form fields completely. Our support desk answers active submissions within 12 business hours.</p>
+                <hr class="contact-card-divider">
+
+                <form action="#" method="POST" novalidate>
+                    <div class="contact-group">
+                        <label for="contact-name">Your Name</label>
+                        <input type="text" id="contact-name" placeholder="First and last name" autocomplete="name" required>
+                    </div>
+
+                    <div class="contact-group">
+                        <label for="contact-email">Email Address</label>
+                        <input type="email" id="contact-email" placeholder="example@domain.com" autocomplete="email" required>
+                    </div>
+
+                    <div class="contact-group">
+                        <label for="contact-reason">What can we help you with? (Inquiry Subject)</label>
+                        <select id="contact-reason" required>
+                            <option value="" disabled selected>-- Select an issue category --</option>
+                            <option value="delivery">Where's my stuff? (Delivery Status Tracking)</option>
+                            <option value="billing">Billing issue / Incorrect card charge item</option>
+                            <option value="returns">Damaged item arrival / Return processing assistance</option>
+                            <option value="technical">Technical profile error / Login system bug</option>
+                        </select>
+                    </div>
+
+                    <div class="contact-group">
+                        <label for="contact-msg">Provide clear item details or issue description</label>
+                        <textarea id="contact-msg" rows="6" placeholder="Please include your Order ID number if applicable..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="contact-submit-btn">Submit Case Window</button>
+                </form>
+            </div>
+
+            <!-- Right Panel: Info Breakdown Panel -->
+            <aside class="contact-sidebar-info">
+                <div class="info-highlight-box">
+                    <h4>Looking for quick resolutions?</h4>
+                    <p>Most issues involving delayed tracking numbers, item damage refunds, and account lockouts can be solved instantly via your personalized portal dashboard area.</p>
+                    <a href="login.html" class="contact-panel-link">Go to Your Account Dashboard ➔</a>
+                </div>
+
+                <div class="corporate-address-block">
+                    <h5>Corporate Headquarter Hub</h5>
+                    <p>ShopZone Retail Technologies, Inc.<br>
+                    410 Terry Ave. North<br>
+                    Seattle, WA 98109-5210<br>
+                    United States</p>
+                </div>
+            </aside>
+
+        </div>
+    </main>
+
+    <!-- Smooth Back-to-Top Anchor Button -->
+    <a href="#top" class="scroll-top-btn">↑</a>
+
+    <!-- Main Site Consistent Footer -->
+    <footer>
+        <p>&copy; 2026 ShopZone. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
