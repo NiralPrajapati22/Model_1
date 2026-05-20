@@ -557,6 +557,78 @@
 
     </script>
 
+    <button id="topBtn"
+    class="top-btn">
+
+    ↑
+
+</button>
+
+<!-- ========================= -->
+<!-- jQuery CDN -->
+<!-- ========================= -->
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<!-- ========================= -->
+<!-- Load Header & Footer -->
+<!-- ========================= -->
+
+<script>
+
+    $(function () {
+
+        $("#header").load("header.html");
+
+        $("#footer").load("footer.html");
+
+    });
+
+</script>
+
+<!-- ========================= -->
+<!-- Scroll To Top Script -->
+<!-- ========================= -->
+
+<script>
+
+    // Show Button While Scrolling
+
+    window.addEventListener("scroll", function () {
+
+        const topBtn = document.getElementById("topBtn");
+
+        if (window.scrollY > 300) {
+
+            topBtn.style.display = "flex";
+
+        }
+
+        else {
+
+            topBtn.style.display = "none";
+
+        }
+
+    });
+
+    // Scroll To Top
+
+    document.getElementById("topBtn")
+        .addEventListener("click", function () {
+
+            window.scrollTo({
+
+                top: 0,
+
+                behavior: "smooth"
+
+            });
+
+        });
+
+</script>
+
 </body>
 
 </html>

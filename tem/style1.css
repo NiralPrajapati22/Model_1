@@ -904,3 +904,56 @@ select{
         font-size: 20px;
     }
 }
+
+
+/* ========================= */
+/* Scroll Top Button */
+/* ========================= */
+
+.top-btn{
+
+    position: fixed;
+
+    bottom: 25px;
+
+    right: 25px;
+
+    width: 55px;
+
+    height: 55px;
+
+    background: #ff9900;
+
+    color: #fff;
+
+    border: none;
+
+    border-radius: 50%;
+
+    display: none;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 24px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    z-index: 999;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+
+    transition: all 0.3s ease;
+
+}
+
+.top-btn:hover{
+
+    background: #e68a00;
+
+    transform: translateY(-5px);
+
+}
