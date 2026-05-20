@@ -1,138 +1,353 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ShopZone Customer Service | Help & Contact Us</title>
-    <link rel="stylesheet" href="style.css">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Contact Us - ShopKart</title>
+
+    <link rel="stylesheet"
+        href="style1.css">
+
 </head>
-<body id="top">
 
-    <!-- Header Navigation Bar -->
-    <header>
-        <div class="navbar">
-            <div class="logo"><a href="index.html">ShopZone</a></div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="contact.html" style="color: #febd69;">Contact Us</a></li>
-                <li><a href="login.html">Login</a></li>
-                <li><a href="cart.html">Cart</a></li>
-            </ul>
+<body>
+
+    <!-- ========================= -->
+    <!-- Header -->
+    <!-- ========================= -->
+
+    <div id="header"></div>
+
+    <!-- ========================= -->
+    <!-- Contact Banner -->
+    <!-- ========================= -->
+
+    <section class="contact-banner">
+
+        <div class="container">
+
+            <h1>
+
+                Contact ShopKart
+
+            </h1>
+
+            <p>
+
+                We are here to help you with your orders,
+                support, and shopping experience.
+
+            </p>
+
         </div>
-    </header>
 
-    <!-- Main Container Layout -->
-    <main class="container">
-        
-        <!-- Welcome Hub Banner -->
-        <section class="help-hub-banner">
-            <h1>Hello. What can we help you with today?</h1>
-            <p>Browse our self-service tools or submit an official ticket request directly below to our specialized customer care divisions.</p>
-        </section>
+    </section>
 
-        <!-- Dynamic Self-Service Card Shortcuts Grid -->
-        <section class="help-grid-shortcuts">
-            <div class="help-shortcut-card">
-                <div class="card-icon-box">📦</div>
-                <div class="card-content-box">
-                    <h3>Your Orders</h3>
-                    <p>Track packages, edit shipping paths, or initiate item returns.</p>
-                </div>
-            </div>
-            
-            <div class="help-shortcut-card">
-                <div class="card-icon-box">🔄</div>
-                <div class="card-content-box">
-                    <h3>Returns & Refunds</h3>
-                    <p>View return policies or print drop-off label slips.</p>
-                </div>
-            </div>
+    <!-- ========================= -->
+    <!-- Contact Section -->
+    <!-- ========================= -->
 
-            <div class="help-shortcut-card">
-                <div class="card-icon-box">💳</div>
-                <div class="card-content-box">
-                    <h3>Payment Settings</h3>
-                    <p>Update credit cards, review wallet balances, or change invoices.</p>
-                </div>
-            </div>
+    <section class="contact-page">
 
-            <div class="help-shortcut-card">
-                <div class="card-icon-box">👤</div>
-                <div class="card-content-box">
-                    <h3>Account Settings</h3>
-                    <p>Change login credentials, manage passwords, or edit profiles.</p>
-                </div>
-            </div>
-        </section>
+        <div class="container contact-layout">
 
-        <!-- Two Column Interactive Contact Splitter -->
-        <div class="contact-split-layout">
-            
-            <!-- Left Panel: Official Case Submission Form Container -->
-            <div class="contact-form-card">
-                <h2>Create an Official Support Case</h2>
-                <p class="form-sub-header">Please fill out the form fields completely. Our support desk answers active submissions within 12 business hours.</p>
-                <hr class="contact-card-divider">
+            <!-- Contact Form -->
 
-                <form action="#" method="POST" novalidate>
-                    <div class="contact-group">
-                        <label for="contact-name">Your Name</label>
-                        <input type="text" id="contact-name" placeholder="First and last name" autocomplete="name" required>
+            <div class="contact-form-box">
+
+                <h2>
+
+                    Send Us A Message
+
+                </h2>
+
+                <form class="contact-form">
+
+                    <!-- Name -->
+
+                    <div class="form-group">
+
+                        <label>
+
+                            Full Name
+
+                        </label>
+
+                        <input type="text"
+                            placeholder="Enter your full name">
+
                     </div>
 
-                    <div class="contact-group">
-                        <label for="contact-email">Email Address</label>
-                        <input type="email" id="contact-email" placeholder="example@domain.com" autocomplete="email" required>
+                    <!-- Email -->
+
+                    <div class="form-group">
+
+                        <label>
+
+                            Email Address
+
+                        </label>
+
+                        <input type="email"
+                            placeholder="Enter your email address">
+
                     </div>
 
-                    <div class="contact-group">
-                        <label for="contact-reason">What can we help you with? (Inquiry Subject)</label>
-                        <select id="contact-reason" required>
-                            <option value="" disabled selected>-- Select an issue category --</option>
-                            <option value="delivery">Where's my stuff? (Delivery Status Tracking)</option>
-                            <option value="billing">Billing issue / Incorrect card charge item</option>
-                            <option value="returns">Damaged item arrival / Return processing assistance</option>
-                            <option value="technical">Technical profile error / Login system bug</option>
-                        </select>
+                    <!-- Mobile -->
+
+                    <div class="form-group">
+
+                        <label>
+
+                            Mobile Number
+
+                        </label>
+
+                        <input type="text"
+                            placeholder="Enter mobile number">
+
                     </div>
 
-                    <div class="contact-group">
-                        <label for="contact-msg">Provide clear item details or issue description</label>
-                        <textarea id="contact-msg" rows="6" placeholder="Please include your Order ID number if applicable..." required></textarea>
+                    <!-- Subject -->
+
+                    <div class="form-group">
+
+                        <label>
+
+                            Subject
+
+                        </label>
+
+                        <input type="text"
+                            placeholder="Enter subject">
+
                     </div>
 
-                    <button type="submit" class="contact-submit-btn">Submit Case Window</button>
+                    <!-- Message -->
+
+                    <div class="form-group">
+
+                        <label>
+
+                            Message
+
+                        </label>
+
+                        <textarea placeholder="Write your message"></textarea>
+
+                    </div>
+
+                    <!-- Button -->
+
+                    <button type="submit">
+
+                        Send Message
+
+                    </button>
+
                 </form>
+
             </div>
 
-            <!-- Right Panel: Info Breakdown Panel -->
-            <aside class="contact-sidebar-info">
-                <div class="info-highlight-box">
-                    <h4>Looking for quick resolutions?</h4>
-                    <p>Most issues involving delayed tracking numbers, item damage refunds, and account lockouts can be solved instantly via your personalized portal dashboard area.</p>
-                    <a href="login.html" class="contact-panel-link">Go to Your Account Dashboard ➔</a>
+            <!-- Contact Info -->
+
+            <div class="contact-info">
+
+                <!-- Support -->
+
+                <div class="info-card">
+
+                    <h3>
+
+                        Customer Support
+
+                    </h3>
+
+                    <p>
+
+                        support@shopkart.com
+
+                    </p>
+
+                    <p>
+
+                        +91 98765 43210
+
+                    </p>
+
                 </div>
 
-                <div class="corporate-address-block">
-                    <h5>Corporate Headquarter Hub</h5>
-                    <p>ShopZone Retail Technologies, Inc.<br>
-                    410 Terry Ave. North<br>
-                    Seattle, WA 98109-5210<br>
-                    United States</p>
+                <!-- Address -->
+
+                <div class="info-card">
+
+                    <h3>
+
+                        Office Address
+
+                    </h3>
+
+                    <p>
+
+                        ShopKart Pvt Ltd,
+                        Ahmedabad, Gujarat,
+                        India
+
+                    </p>
+
                 </div>
-            </aside>
+
+                <!-- Working Hours -->
+
+                <div class="info-card">
+
+                    <h3>
+
+                        Working Hours
+
+                    </h3>
+
+                    <p>
+
+                        Monday - Saturday
+
+                    </p>
+
+                    <p>
+
+                        9:00 AM - 7:00 PM
+
+                    </p>
+
+                </div>
+
+                <!-- Google Map -->
+
+                <div class="map-box">
+
+                    <iframe
+                        src="https://maps.google.com/maps?q=Ahmedabad&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                        allowfullscreen=""
+                        loading="lazy">
+                    </iframe>
+
+                </div>
+
+            </div>
 
         </div>
-    </main>
 
-    <!-- Smooth Back-to-Top Anchor Button -->
-    <a href="#top" class="scroll-top-btn">↑</a>
+    </section>
 
-    <!-- Main Site Consistent Footer -->
-    <footer>
-        <p>&copy; 2026 ShopZone. All rights reserved.</p>
-    </footer>
+    <!-- ========================= -->
+    <!-- Support Section -->
+    <!-- ========================= -->
+
+    <section class="support-section">
+
+        <div class="container">
+
+            <h2 class="section-title">
+
+                Need Quick Help?
+
+            </h2>
+
+            <div class="support-grid">
+
+                <!-- Card -->
+
+                <div class="support-card">
+
+                    <h3>
+
+                        Order Tracking
+
+                    </h3>
+
+                    <p>
+
+                        Track your latest orders and delivery updates.
+
+                    </p>
+
+                </div>
+
+                <!-- Card -->
+
+                <div class="support-card">
+
+                    <h3>
+
+                        Returns & Refunds
+
+                    </h3>
+
+                    <p>
+
+                        Easy return policy with quick refund support.
+
+                    </p>
+
+                </div>
+
+                <!-- Card -->
+
+                <div class="support-card">
+
+                    <h3>
+
+                        Account Support
+
+                    </h3>
+
+                    <p>
+
+                        Get help with login, account settings, and security.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- Footer -->
+    <!-- ========================= -->
+
+    <div id="footer"></div>
+
+    <!-- ========================= -->
+    <!-- jQuery CDN -->
+    <!-- ========================= -->
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- ========================= -->
+    <!-- Load Header & Footer -->
+    <!-- ========================= -->
+
+    <script>
+
+        $(function () {
+
+            $("#header").load("header.html");
+
+            $("#footer").load("footer.html");
+
+        });
+
+    </script>
 
 </body>
+
 </html>
