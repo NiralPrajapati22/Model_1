@@ -56,13 +56,23 @@ function Header() {
         </Link>
 
         <Link
-          to="/orders"
+          to="/products"
           style={{
             color: "white",
             textDecoration: "none"
           }}
         >
           Orders
+        </Link>
+
+        <Link
+          to="/Recipes"
+          style={{
+            color: "white",
+            textDecoration: "none"
+          }}
+        >
+          Recipes
         </Link>
 
         <Link

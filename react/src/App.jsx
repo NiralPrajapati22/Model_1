@@ -1,12 +1,13 @@
 import './App.css';
 import Header from './header';
 import Register from "./Register.jsx";
-import DataFetcher from "./products.jsx";
-import Recipes from "./recipes.jsx";
-import Cart from "./cart.jsx";
+import DataFetcher from "./Products.jsx";
+
 import { Route, Routes } from 'react-router-dom';
 import Home from './Home';
-
+import Cart from './cart.jsx';
+import Products from './Products.jsx';
+import Recipes from "./Recipes.jsx";
 function App() {
   return (
 
@@ -14,6 +15,9 @@ function App() {
       <Routes>
         <Route path='/Home' element={<Home />}></Route>
         <Route path='/Register' element={<Register />}></Route>
+        <Route path='/cart' element={<Cart />}></Route>
+        <Route path='/products' element={<Products />}></Route>
+        <Route path='/Recipes' element={<Recipes/>}></Route>
       </Routes>
       {/* <Header /> */}
 

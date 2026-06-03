@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-
-function DataFetcher() {
+import Header from "./header";
+function Products() {
 
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -37,7 +37,8 @@ function DataFetcher() {
   }
 
   return (
-
+  <>
+  <Header />
   <div>
 
     <h1 style={{ color: "blue", fontSize: "40px",textAlign : "center" }}>Products List</h1>
@@ -84,7 +85,8 @@ function DataFetcher() {
     </div>
 
   </div>
+  </>
 );
 }
 
-export default DataFetcher;
+export default Products;

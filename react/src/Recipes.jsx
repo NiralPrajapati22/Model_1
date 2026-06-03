@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-
+import Header from "./header";
 function Recipes() {
 
   const [data, setData] = useState([]);
@@ -38,9 +38,10 @@ function Recipes() {
   }
 
   return (
-
+    <>
+    <Header />
     <div>
-
+      
       <h1
         style={{
           color: "blue",
@@ -94,6 +95,7 @@ function Recipes() {
       </div>
 
     </div>
+    </>
   );
 }
 
