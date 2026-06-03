@@ -22,20 +22,13 @@ http.createServer((req, res) => {
                 res.end("<h1>File Not Found</h1>");
 
             } else {
-
                 res.end(data);
-
             }
 
         });
-
     }
-
-    // PAGE NOT FOUND
     else {
-
         res.end("<h1>404 Page Not Found</h1>");
-
     }
 
 }).listen(3000);

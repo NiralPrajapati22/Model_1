@@ -1,11 +1,16 @@
 import React, { useState } from "react";
 import "./Register.css";
 import Header from "./header";
-
+import axios from "axios";
 const Register = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const insert_data = async (e) =>{
+    e.preventDefault()
+    await axios.post('https://automatic-space-spork-97vrjg4v9g44374gq-5500.app.github.dev/register',{name,email,password});
+  }
+
   return (
     <>
     <Header />
@@ -13,7 +18,7 @@ const Register = () => {
       <div className="register-box">
         <h2>Register Form</h2>
 
-        <form>
+        <form onSubmit={insert_data}>
           <input type="text" placeholder="Enter Name" value={name}
             onChange={(e) => setName(e.target.value)}/>
 
