@@ -25,17 +25,7 @@ function Header() {
         Amazon
       </h2>
 
-      <input
-        type="text"
-        placeholder="Search products..."
-        style={{
-          width: "50%",
-          padding: "10px",
-          borderRadius: "5px",
-          border: "none",
-          outline: "none"
-        }}
-      />
+      
 
       <div
         style={{
@@ -66,13 +56,23 @@ function Header() {
         </Link>
 
         <Link
+          to="/Counter"
+          style={{
+            color: "white",
+            textDecoration: "none"
+          }}
+        >
+          Counter
+        </Link>
+
+        <Link
           to="/Recipes"
           style={{
             color: "white",
             textDecoration: "none"
           }}
         >
-          Recipes
+          API Call
         </Link>
 
         <Link
@@ -86,6 +86,16 @@ function Header() {
         </Link>
 
         <Link
+          to="/Website"
+          style={{
+            color: "white",
+            textDecoration: "none"
+          }}
+        >
+          Static Website
+        </Link>
+
+        <Link
           to="/Register"
           style={{
             color: "white",
@@ -94,6 +104,19 @@ function Header() {
         >
           Register
         </Link>
+        
+        <Link
+          to="/Users"
+          style={{
+            color: "white",
+            textDecoration: "none"
+          }}
+        >
+          Users
+        </Link>
+        
+
+        
 
       </div>
 

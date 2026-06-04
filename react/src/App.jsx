@@ -8,6 +8,9 @@ import Home from './Home';
 import Cart from './cart.jsx';
 import Products from './Products.jsx';
 import Recipes from "./Recipes.jsx";
+import WebsiteViewer from './Website';
+import Counter from './Counter';
+import Users from './Users';
 function App() {
   return (
 
@@ -18,6 +21,10 @@ function App() {
         <Route path='/cart' element={<Cart />}></Route>
         <Route path='/products' element={<Products />}></Route>
         <Route path='/Recipes' element={<Recipes/>}></Route>
+        <Route path='/Website' element={<WebsiteViewer />}></Route>
+        <Route path='/Counter' element={<Counter />}></Route>
+        <Route path='/Image_Gallery' element={<WebsiteViewer />}></Route>
+        <Route path='Users' element={<Users />}></Route>
       </Routes>
       {/* <Header /> */}
 

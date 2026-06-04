@@ -9,6 +9,9 @@ const Register = () => {
   const insert_data = async (e) =>{
     e.preventDefault()
     await axios.post('https://automatic-space-spork-97vrjg4v9g44374gq-5500.app.github.dev/register',{name,email,password});
+    setEmail("")
+    setName("")
+    setPassword("")
   }
 
   return (
