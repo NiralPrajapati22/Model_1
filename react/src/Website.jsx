@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "./header";
 
 function WebsiteViewer() {
+  const [text, setText] = useState("");
+
   const openWebsite = () => {
     window.open(
       "https://model-1-z9uk.onrender.com/Website/",
@@ -50,6 +52,26 @@ function WebsiteViewer() {
       marginTop: "10px",
     },
 
+    input: {
+      width: "100%",
+      padding: "10px",
+      borderRadius: "6px",
+      border: "1px solid #ccc",
+      fontSize: "14px",
+      marginBottom: "15px",
+      boxSizing: "border-box",
+    },
+
+    output: {
+      padding: "12px",
+      background: "#f8fafc",
+      borderRadius: "6px",
+      border: "1px solid #e5e7eb",
+      minHeight: "40px",
+      textAlign: "left",
+      wordWrap: "break-word",
+    },
+
     page: {
       background: "#f4f6f8",
       minHeight: "100vh",
@@ -61,6 +83,7 @@ function WebsiteViewer() {
       <Header />
 
       <div style={styles.container}>
+        {/* Static Website Section */}
         <div style={styles.section}>
           <h2 style={styles.title}>Static Website</h2>
           <button
@@ -77,6 +100,7 @@ function WebsiteViewer() {
           </button>
         </div>
 
+        {/* Image Gallery Section */}
         <div style={styles.section}>
           <h2 style={styles.title}>Image Gallery</h2>
           <button
@@ -91,6 +115,25 @@ function WebsiteViewer() {
           >
             Open Image Gallery
           </button>
+        </div>
+
+        {/* Dynamic Text Display Section */}
+        <div style={styles.section}>
+          <h2 style={styles.title}>Dynamic Text Display</h2>
+
+          <input
+            type="text"
+            placeholder="Type something here..."
+            value={text}
+            onChange={(e) => setText(e.target.value)}
+            style={styles.input}
+          />
+
+          <h3>Output:</h3>
+
+          <div style={styles.output}>
+            {text || "Your text will appear here..."}
+          </div>
         </div>
       </div>
     </div>

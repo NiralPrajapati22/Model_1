@@ -11,6 +11,7 @@ import Recipes from "./Recipes.jsx";
 import WebsiteViewer from './Website';
 import Counter from './Counter';
 import Users from './Users';
+import DynamicTextDisplay from './DynamicTextDisplay';
 function App() {
   return (
 
@@ -25,6 +26,7 @@ function App() {
         <Route path='/Counter' element={<Counter />}></Route>
         <Route path='/Image_Gallery' element={<WebsiteViewer />}></Route>
         <Route path='Users' element={<Users />}></Route>
+        <Route path='/DynamicTextDisplay' element={<DynamicTextDisplay />}></Route>
       </Routes>
       {/* <Header /> */}
 
