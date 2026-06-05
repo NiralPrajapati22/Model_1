@@ -8,13 +8,13 @@ const connectDB = require('./config.js');
 app.use(express.json());
 app.use(cors());
 
-app.use(
-    cors({
-        origin: "https://automatic-space-spork-97vrjg4v9g44374gq-3000.app.github.dev",
-        methods: ['GET', 'POST', 'PUT', 'DELETE'],
-        credentials: true
-    })
-);
+// app.use(
+//     cors({
+//         origin: "https://automatic-space-spork-97vrjg4v9g44374gq-3000.app.github.dev",
+//         methods: ['GET', 'POST', 'PUT', 'DELETE'],
+//         credentials: true
+//     })
+// );
 
 connectDB();
 
