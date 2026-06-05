@@ -36,7 +36,7 @@ function Header() {
       >
 
         <Link
-          to="/Home"
+          to="/"
           style={{
             color: "white",
             textDecoration: "none"
