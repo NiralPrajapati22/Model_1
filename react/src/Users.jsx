@@ -12,7 +12,7 @@ function Users() {
   const getUsers = async () => {
     try {
       const response = await axios.get(
-        "https://automatic-space-spork-97vrjg4v9g44374gq-5500.app.github.dev/users"
+        "https://model-1-z9uk.onrender.com/users"
       );
       setUsers(response.data);
     } catch (error) {

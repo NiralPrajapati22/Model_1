@@ -4,14 +4,14 @@ import Header from "./header";
 function WebsiteViewer() {
   const openWebsite = () => {
     window.open(
-      "https://automatic-space-spork-97vrjg4v9g44374gq-5500.app.github.dev/Website/",
+      "https://model-1-z9uk.onrender.com/Website/",
       "_blank"
     );
   };
 
   const openImageGallery = () => {
     window.open(
-      "https://automatic-space-spork-97vrjg4v9g44374gq-5500.app.github.dev/Image/",
+      "https://model-1-z9uk.onrender.com/Image/",
       "_blank"
     );
   };
