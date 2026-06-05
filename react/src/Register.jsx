@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Register.css";
 import Header from "./header";
+import Footer from './Footer'
 import axios from "axios";
 const Register = () => {
   const [name, setName] = useState("");
@@ -47,6 +48,7 @@ const Register = () => {
         </form>
       </div>
     </div>
+    <Footer />
     </>
   );
 };

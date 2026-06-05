@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Header from "./header";
+import Footer from './Footer'
 
 function Users() {
   const [users, setUsers] = useState([]);
@@ -108,6 +109,7 @@ function Users() {
           </table>
         </div>
       </div>
+      <Footer />
     </>
   );
 }

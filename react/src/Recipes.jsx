@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Header from "./header";
+import Footer from './Footer'
 function Recipes() {
 
   const [data, setData] = useState([]);
@@ -95,6 +96,7 @@ function Recipes() {
       </div>
 
     </div>
+    <Footer />
     </>
   );
 }

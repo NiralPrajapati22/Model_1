@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Header from "./header";
+import Footer from './Footer'
 function DynamicTextDisplay() {
   const [text, setText] = useState("");
 
@@ -17,6 +18,7 @@ function DynamicTextDisplay() {
       <h3>Output:</h3>
       <p>{text}</p>
     </div>
+    <Footer />
     </>
   );
 }

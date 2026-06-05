@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Header from "./header";
+import Footer from './Footer'
 function Counter() {
   const [count, setCount] = useState(0);
 
@@ -35,6 +36,7 @@ function Counter() {
         Reset
       </button>
     </div>
+    <Footer />
     </>
   );
 }

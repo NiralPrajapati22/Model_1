@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Header from './header';
+import Footer from './Footer'
 
 function Cart() {
 
@@ -41,6 +42,7 @@ function Cart() {
   return (
     <>
     <Header />
+    
     <div
       style={{
         backgroundColor: "#EAEDED",
@@ -136,6 +138,7 @@ function Cart() {
       ))}
 
     </div>
+    <Footer />
     </>
   );
 }
